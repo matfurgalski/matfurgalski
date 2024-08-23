@@ -1,0 +1,25 @@
+---
+import Nav from '../pages/components/Nav'
+import { ViewTransitions } from 'astro:transitions';
+import Fotter from '../pages/components/Fotter.astro';
+---
+
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+		<title>Astro</title>
+		<ViewTransitions />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-stone-200">
+	<main class="flex flex-col h-screen">
+        <Nav client:load/>
+        <slot/>
+		<Fotter/>
+    </main>
+	
+	</body>
+</html>
