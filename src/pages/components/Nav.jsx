@@ -34,7 +34,7 @@ console.log(matches)
                 <a href="/">Home</a>
                 <a href="/projects">Projects</a>
                 <a href="/about">About</a>
-                <a href="/about/#expirience">Expirience</a>
+                <a href="/about/#expirience">Experience</a>
                 <a href="/about/#contact">Contact</a>
             </div>
 }
